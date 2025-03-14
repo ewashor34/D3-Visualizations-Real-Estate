@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Visualizations By Elias Washor </title>
+    
+    <!--below is the "UMD" bundle for D3, it's like importing -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <h1>Chicagoland Real Estate Visualizations -- Elias Washor</h1>
+
+    <!--have to use div to separate plots into each section, note use of id ="scatter..."-->
+    <div id="scatter-section">
+        <h2>1) Price Vs. Sqft (Chicagoland Properties)</h2>
+        <div id="scatter-cont"></div>
+    </div>
+
+    <!--have to use div container again for boxplot -->
+    <div id="box-section">
+        <h2>2) Box Plots of Price for different Cities</h2>
+        <div id="box-cont"></div>
+    </div>
+
+    <!--reference javascript file which imports data and creates the plots -->
+    <script src="RealEstate.js"></script>
+</body>
+</html>
